@@ -58,5 +58,5 @@ getcap -r / 2>/dev/null # Showing all the capabilities set
 ## NFS Root Squashing
 
 - `cat /etc/exports` -> If there is a line like `no_root_squash`
-- If this is the case check mounts on this ip with `showmount -e <ip>`
-- if you can see this you can `mount -o rw,vers=2 <ip>:/tmp /tmp/mountme`
+- If this is the case check mounts on this ip with `showmount -e {ip}`
+- if you can see this you can `mount -o rw,vers=2 {ip}:/tmp /tmp/mountme`
