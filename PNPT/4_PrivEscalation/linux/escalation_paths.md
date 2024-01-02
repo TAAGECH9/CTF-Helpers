@@ -1,4 +1,4 @@
-# Escalation Paths
+# Linux Escalation Paths
 
 
 
@@ -50,3 +50,13 @@ getcap -r / 2>/dev/null # Showing all the capabilities set
 ## Schedule Tasks - Cron Jobs
 
 - [Payload all the Things - Scheduled tasks](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md#scheduled-tasks)
+- Cron Path -> Check if there is a cronjob with root permission. Create a new
+- Cron Wildcards -> If you have a cron job that is executing a script as root but you are not able to modify the file + the file uses a wildcard in the script (for example tar). We can expand upon this wild card and inject some commands
+- Cron Overwrites
+
+
+## NFS Root Squashing
+
+- `cat /etc/exports` -> If there is a line like `no_root_squash`
+- If this is the case check mounts on this ip with `showmount -e <ip>`
+- if you can see this you can `mount -o rw,vers=2 <ip>:/tmp /tmp/mountme`

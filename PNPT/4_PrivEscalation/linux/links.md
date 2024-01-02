@@ -20,8 +20,6 @@
 - [Linux Priv Checker](https://github.com/sleventyeleven/linuxprivchecker)
 
 
-
-
 ## Course Resources
 - [TCM Course Resources - Linux Priv Escalation](https://github.com/TCM-Course-Resources/Linux-Privilege-Escalation-Resources)
 - [Priv Escalation Course on THM](https://tryhackme.com/room/linuxprivescarena)
