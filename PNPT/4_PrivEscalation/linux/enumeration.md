@@ -27,3 +27,8 @@ ip route # Shows you all the routes also to different networks ;)
 ip neigh # Checks for arp tables
 netstat -ano # What ports are open and what communication does exist?
 ```
+
+
+## Process Snooping
+
+- [Pspy](https://github.com/DominicBreuker/pspy)

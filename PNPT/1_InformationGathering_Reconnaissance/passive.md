@@ -52,3 +52,7 @@ sublist3r -d tesla.com #
 ```sh
 whatweb https://tesla.com # Will give you the info of what this page is built on
 ```
+
+## Misc
+
+- [Shodan](https://www.shodan.io/)
