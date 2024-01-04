@@ -16,7 +16,8 @@ For Web Vulnerabilities
 - Nessus
 
 ```sh
-nikto -h http://{ip_address} # Makes a Vulnerability Scan
+nikto -h {ip_address} -p {port_1,port_2} -Format csv -o bla.csv # Makes a Vulnerability Scan on the requested ports in csv format. Storing output in bla.csv
+
 ```
 
 ## Vulnerability Research
