@@ -34,6 +34,7 @@ sudo -l # Gives you all the command that you can run without root
 
 ```bash
 find / -perm -u=s -type f 2>/dev/null # Shows all files owned by the root user
+find / -perm -g=s -type f 2>/dev/null # Shows all files owned by the root user
 ```
 
 ## Capabilities
