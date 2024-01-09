@@ -35,7 +35,12 @@ sudo -l # Gives you all the command that you can run without root
 ```bash
 find / -perm -u=s -type f 2>/dev/null # Shows all files owned by the root user
 find / -perm -g=s -type f 2>/dev/null # Shows all files owned by the root user
+
+## Tools for Shared Object injection
+strace /usr/local/bin/suid-so # Whereas the suid-so is the binary we want to investigate
+strace /usr/local/bin/suid-so | grep -i -E "open|access|no such file" # Search for nonexisting files/libraries where I can inject element via a so object. so is created after compiling of a c program
 ```
+
 
 ## Capabilities
 
