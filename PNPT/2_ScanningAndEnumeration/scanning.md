@@ -33,8 +33,11 @@ msfconsole
 - Amass
 - Gobuster
 
-```
 
+## Subdomain hunting
+
+```sh
+wfuzz -c -f sub-fighter -w top5000.txt -u 'http://cmess.thm' -H "Host: FUZZ.cmess.thm" #Fuzzing subdomains -> See tldr page for more info
 ```
 
 
